@@ -1,0 +1,211 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 14px;
+    font-weight: 400;
+    /* border: 1px solid black; */
+    box-sizing: border-box;
+    font-family:  "微軟正黑體修正", "微軟正黑體", "Microsoft JhengHei", "PMingLiU", "新細明體", "MingLiU", "標楷體", "DFKai-sb", Arial, Helvetica, FreeSans, sans-serif;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+a{
+    text-decoration:none;
+    color: blue;
+}
+
+.p-center{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contain{
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px 10px;
+}
+
+.tip{
+    width: 100%;
+    background-color: #F5D83C;
+    color: red;
+    text-align: center;
+    line-height: 2em;
+}
+
+header img{
+    width: 180px;
+}
+
+.title{
+    font-size: 1.5em;
+    letter-spacing: 5px;
+}
+
+.title-block{
+    width: 5px;
+    background-color: #F5D83C;
+    margin-right: 20px;
+}
+
+.login {
+    /* text-align: center; */
+    padding: 50px 0px;
+    font-size: 1em;
+    display: grid;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    font-size: 1em;
+    padding: 2px 16px;
+    border-radius: 5px;
+    border: 0.5px solid gray;
+    margin-left: 10px;
+    
+}
+
+.login .btn{
+    cursor: pointer;
+    font-size: 1em;
+    background-color: #F5D83C;
+    padding: 8px 0px;
+    border-radius: 8px;
+    border: 0px;
+    text-align: center;
+    -webkit-transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease;
+}
+
+.login .btn:hover{
+    background-color: rgb(255, 220, 25); 
+}
+
+.login .btn:active{
+    transform: scale(0.97);
+    -webkit-transform: scale(0.97);
+}
+
+footer {
+    background-color: rgb(231, 231, 231);
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer .contain {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+.vote{
+    color: white;
+    font-weight: 600;
+    font-size: 1.1em;
+    letter-spacing: 1px;
+}
+
+.vote div{
+    padding: 8px 0px;
+}
+
+.vote span{
+    color: #F5D83C;
+}
+
+.remark{
+    font-size: 0.9em;
+    color: rgb(161, 161, 161);
+}
+
+.remark2{
+    font-size: 0.7em;
+    font-weight: 800;
+    color: rgb(255, 179, 179);
+    /* margin-left: 5em; */
+}
+
+.area{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.vote-area{
+    border-radius: 10px;
+    border: 2px solid #F5D83C;
+    text-align: center;
+}
+
+.on{
+    background-color: #F5D83C;
+    color: black;
+}
+
+.data-area{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
+.data-area form{
+    width: 300px;
+}
+
+.data-area input{
+    font-size: 0.9em;
+}
+
+.vote-enter{
+    border-radius: 0px;
+    padding: 5px;
+}
+
+.vote-send{
+    margin-left: 10px;
+    border-radius: 10px;
+    background-color: #169bd4;
+    text-align: center;
+    align-content: center;
+    padding: 8px 10px;
+    border: none;
+    -webkit-transition: transform 0.1s ease;
+    transition: transform 0.1s ease;
+}
+
+.vote-send:active{
+    transform: scale(0.97);
+    -webkit-transform: scale(0.97);
+}
+
+@media screen and (max-width:640px) {
+    .data-area{
+        display: grid;
+    }
+    .data-area form{
+        width: 100%;
+    }
+}
+
+

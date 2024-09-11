@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>基隆市長罷免投票報票系統</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var on = $(".area").find(".on").attr("value");
+            $("#vote-num").val(on);
+            $(".vote-area").click(function () {
+                var areaNum = $(this).attr("value");
+                $(this).css({ "background-color": "#F5D83C", "color": "black" });
+                $(this).siblings().css({ "background-color": " rgb(77, 77, 77)", "color": "white" });
+                $("#vote-num").val(areaNum);
+            });
+
+            $(".agree").click(function (event) {
+                event.preventDefault();
+                var agreeVote = $("#agree-input").val();
+                $("#agree-output").val(agreeVote);
+            });
+
+            $(".disagree").click(function (event) {
+                event.preventDefault();
+                var disagreeVote = $("#disagree-input").val();
+                $("#disagree-output").val(disagreeVote);
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container">
+
+        <header style="padding-left: 30px;display: flex;align-items: center;">
+            <img src="./images/logo.png" alt="">
+            <span style="font-size: 1.2em;padding-left: 10px;font-weight: 900;">選舉報票系統</span>
+        </header>
+        <section style="background-color: rgb(77, 77, 77);">
+            <div class="contain vote" style="padding-bottom: 20px;">
+                <div class="title">基隆市長謝國樑罷免投票</div>
+                <br>
+                <div style="display: flex;justify-content: space-between;">
+                    <div>登入人員：<span>0033</span>(最終票數上限：<span>3,000</span>)</div>
+                    <div>[登出]</div>
+                </div>
+                <div>負責選區：<span>基隆市第一選區</span></div>
+            </div>
+            <div style="border-top: 1px solid white;">
+                <div class="contain vote" style="padding-top: 10px;">
+                    <div class="remark">請3~5分鐘更換一次票所</div>
+                    <div class="area">
+                        <div class="vote-area on" value="01">票所1</div>
+                        <div class="vote-area" value="02">票所2</div>
+                        <div class="vote-area" value="03">票所3</div>
+                    </div>
+                    <div style="border-bottom: 1px solid rgb(161, 161, 161);padding-bottom: 20px;">投開票所編號：<input
+                            type="text" value="" disabled="disabled" id="vote-num"></div>
+                    <div class="remark">請輸入當下票所"總票數"</div>
+
+                    <div class="data-area">
+                        <form style="display: flex;align-items: center;flex-wrap: wrap;">
+                            <span style="font-size: 1.2em;">同&emsp;意</span>
+                            <input class="vote-enter" type="text" inputmode="numeric" id="agree-input" size="6"
+                                maxlength="6">
+                            <input class="vote-send agree" type="image" src="./images/noun-send-7170283-2.png">
+                            <span style="margin-left: 10px;font-size: 0.8em;">已上傳</span>
+                            <input class="vote-enter" type="text" value="" disabled="disabled" id="agree-output"
+                                size="6" maxlength="6 ">
+                            <span
+                                style="font-size: 0.8em; color: #ffcccc; padding-top: 5px; width: 100%;margin-left: 60px;">數字請大於等於前段文字</span>
+                        </form>
+                        <div style="text-align: right;padding-top: 0px;margin-left: 10px;" class="remark">
+                            前次送出時間：2024/10/23/16:05:33</div>
+                    </div>
+
+                    <div class="data-area">
+                        <form style="display: flex; align-items: center; flex-wrap: wrap;">
+                            <span style="font-size: 1.2em;">不同意</span>
+                            <input class="vote-enter" type="text" inputmode="numeric" id="disagree-input" size="6"
+                                maxlength="6">
+                            <input class="vote-send disagree" type="image" src="./images/noun-send-7170283-2.png">
+                            <span style="margin-left: 10px; font-size: 0.8em;">已上傳</span>
+                            <input class="vote-enter" type="text" value="" disabled="disabled" id="disagree-output"
+                                size="6" maxlength="6">
+                            <span
+                                style="font-size: 0.8em; color: #ffcccc; padding-top: 5px; width: 100%;margin-left: 60px;">數字請大於等於前段文字</span>
+                        </form>
+                        <div style="text-align: right; padding-top: 0px; margin-left: 10px;" class="remark">
+                            前次送出時間：2024/10/23/16:05:33</div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="contain">
+                <ol style="line-height: 1.5em;padding-left: 10px;">
+                    <li>核對上方 [ 負責選區] 與 [ 票所編號]是否與現場票所相同。 (若資料有誤請即時回報)</li>
+                    <li>開始記票時，每3~5分鐘更換一次票所回報。</li>
+                    <li>輸入當下 "總票數" ，確認無誤再點擊 [go] 送出。***輸入數字不可低於前筆，若輸入錯誤請勿驚慌，等開票所票數超過再恢復輸入即可。</li>
+                    <li>報票時間：16:00開始至所負責的票所開票結束。</li>
+                </ol>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div class="contain">
+            若有任何疑問，請洽客服電話(02)2311-8000#5340或LINE ID：<a href="https://line.me/ti/p/@904ojppu">@904ojppu</a>
+            <br>
+            <br>
+            <div style="font-size: 0.8em;">copyright©2024BBC</div>
+        </div>
+    </footer>
+</body>
+
+</html>
