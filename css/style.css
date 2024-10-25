@@ -435,11 +435,6 @@ input[type=checkbox] {
         background-repeat: no-repeat;
     }
 
-    .center img {
-        width: 300px;
-        padding: 0px 16px;
-    }
-
     .vote-item {
         grid-template-columns: 1fr;
         padding: 30px 0px;
