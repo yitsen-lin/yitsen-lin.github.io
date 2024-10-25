@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:site_name" content="ryusoul">
+    <meta property="og:title" content="益比喜-小晶晶我最亮創意合照大賽">
+    <meta property="og:description"
+        content="立即拍下家中寶貝與小晶晶葉黃素凍最有「創意」的合照，點擊上方【我要報名】上傳照片，並寫下你的照片主題，號召親友上網投票，人氣越高的作品就有機會獲得益比喜獨家好禮!">
+    <title>益比喜-小晶晶我最亮創意合照大賽</title>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    
+</head>
+
+<body>
+    <header>
+        <div class="pc" style="margin-left: auto;margin-right: auto;max-width: 1980px;">
+            <lottie-player src="./images/mean.json" background="transparent" style="max-width: 1980px;" speed="1" loop="true"
+                 autoplay="true"></lottie-player>
+        </div>
+        <div class="mobile"><img src="./images/img-mobile.png" alt=""></div>
+    </header>
+    <section class="nav contain">
+        <div class="contain2 nav-btn nav-other"><a href="index.html">活動說明</a></div>
+        <div class="contain2 nav-btn nav-other"><a href="gift.html">活動獎品</a></div>
+        <div class="contain2 nav-btn nav-other"><a href="play.html">我要報名</a></div>
+        <div class="contain2 nav-btn nav-other"><a href="vote.html">票選活動區</a></div>
+        <div class="contain2 nav-btn nav-main"><a href="winner.html">得獎名單</a></div>
+    </section>
+    <section class="bg">
+        <div class="contain">
+            <div class="center" data-aos="fade-up"><img src="./images/title-10.png" alt=""></div>
+            <table class="winner-table" data-aos="fade-up">
+                <tr>
+                    <th>獎項</th>
+                    <th>編號</th>
+                    <th>照片主題</th>
+                </tr>
+                <tr>
+                    <td  rowspan='3'>人氣獎</td>
+                    <td>bbb</td>
+                    <td>ccc</td>
+                </tr>
+                <tr>
+                    <td>bbb</td>
+                    <td>ccc</td>
+                </tr>
+                <tr>
+                    <td>bbb</td>
+                    <td>ccc</td>
+                </tr>
+                <tr>
+                    <td  rowspan='2'>創意獎</td>
+                    <td>bbb</td>
+                    <td>ccc</td>
+                </tr>
+                <tr>
+                    <td>bbb</td>
+                    <td>ccc</td>
+                </tr>
+                <tr>
+                    <td  rowspan='2'>閃亮獎</td>
+                    <td>bbb</td>
+                    <td>ccc</td>
+                </tr>
+                <tr>
+                    <td>bbb</td>
+                    <td>ccc</td>
+                </tr>
+            </table>
+            <div data-aos="fade-up" style="font-size: 1.2em;line-height: 2em;">佈獎時間：XX/XX<br>得獎者請於XX/XX前回覆「姓名、地址、電話、Email」<br>等資料至此信箱yoyo_mail@ebc.net.tw，逾期視同放棄，非常感謝。</div>         
+        </div>
+        <img style="width: 100%;margin-top: 30px;" src="./images/bg-bottom.png" alt="">
+        <div style="background-color: #f4e558;margin-top: -10px;padding-bottom: 200px;">
+            <div class="contain">
+                <div class="center" data-aos="fade-up"><img src="./images/title-9.png" alt=""></div>
+                <div class="center" data-aos="fade-up">
+                    1.中獎名單公佈後，主辦單位將另以電子郵件、活動平台訊息等方式通知得獎人，得獎人須於收到通知7個工作日內，回覆登記領獎事宜。若未在指定時間內回覆，視為放棄領獎資格，獎項不另行補發。<br>
+                    2.若因中獎人資料填寫不完整或不正確，造成無法聯繫或贈品無法送達，將視同自願放棄領獎資格，主辦單位不負補發獎項或任何責任。<br>
+                    3.活動主辦單位保留更改活動獎品之權利。活動獎品以實物為準，得獎者不得將當選權利轉讓他人，並不得要求折換現金或兌換其他商品。<br>
+                    4.贈品一經寄送後，如有遺失損毀等情事，主辦單位不負補發之責；所有獎項日後之使用或維修，主辦單位概不負責。
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- gotop STR -->
+    <div id="gotop"><a href="#" class="scrollup">Scroll</a></div>
+    <!-- gotop END -->
+
+    
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
+    <!--Smooth Page Scroll to Top -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 100) {
+                    $('.scrollup').fadeIn();
+                } else {
+                    $('.scrollup').fadeOut();
+                }
+            });
+
+            $('.scrollup').click(function () {
+                $("html, body").animate({ scrollTop: 0 }, 600);
+                return false;
+            });
+
+        });
+    </script>
+</body>
+
+</html>

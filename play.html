@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:site_name" content="ryusoul">
+    <meta property="og:title" content="益比喜-小晶晶我最亮創意合照大賽">
+    <meta property="og:description"
+        content="立即拍下家中寶貝與小晶晶葉黃素凍最有「創意」的合照，點擊上方【我要報名】上傳照片，並寫下你的照片主題，號召親友上網投票，人氣越高的作品就有機會獲得益比喜獨家好禮!">
+    <title>益比喜-小晶晶我最亮創意合照大賽</title>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    
+</head>
+
+<body>
+    <header>
+        <div class="pc" style="margin-left: auto;margin-right: auto;max-width: 1980px;">
+            <lottie-player src="./images/mean.json" background="transparent" style="max-width: 1980px;" speed="1" loop="true"
+                 autoplay="true"></lottie-player>
+        </div>
+        <div class="mobile"><img src="./images/img-mobile.png" alt=""></div>
+    </header>
+    <section class="nav contain">
+        <div class="contain2 nav-btn nav-other"><a href="index.html">活動說明</a></div>
+        <div class="contain2 nav-btn nav-other"><a href="gift.html">活動獎品</a></div>
+        <div class="contain2 nav-btn nav-main"><a href="play.html">我要報名</a></div>
+        <div class="contain2 nav-btn nav-other"><a href="vote.html">票選活動區</a></div>
+        <div class="contain2 nav-btn nav-other"><a href="winner.html">得獎名單</a></div>
+    </section>
+    <section class="bg">
+        <div class="contain">
+            <div class="center play" data-aos="fade-up"><img src="./images/play.png" alt=""></div>
+            <div style="max-width: 500px;margin-left: auto;margin-right: auto;"> 
+                <div class="play-text" data-aos="fade-up">(一)登入<a href=""><img src="./images/login-fb.png" alt=""></a></div>
+                <div class="play-text" data-aos="fade-up">(二)填資料</div>
+            </div>
+            <div style=" margin: 40px auto 40px auto;">
+                <div class="center" data-aos="fade-up"><img src="./images/title-11.png" alt=""></div>
+                <div class="center" data-aos="fade-up"><input id=" " name="" type="text" class="input_yellow"></div>          
+                <div class="texxt" data-aos="fade-up" style="text-align:center;  padding:20px; font-size:1em;">(備註: 寫下與小晶晶連結的設計主題)</div>
+            </div>
+            <div class="center" data-aos="fade-up"><img src="./images/title-12.png" alt=""></div>
+            <div class="center" data-aos="fade-up"><a class="white_btn" id="btnSend" href="">選擇照片</a></div>
+            <div class="texxt" data-aos="fade-up" style="text-align:center;  padding:20px; font-size:1em;">(圖片規格: 大小5MB以下 ，JPG或PNG檔)</div>
+            <div data-aos="fade-up" style="text-align:center; font-size:1.2em;color: red;padding: 20px 0px 10px 0px;">※請填寫聯絡資訊以便接收得獎通知</div>
+            <div class="center">
+                <table class="contect" data-aos="fade-up">
+                    <tr>
+                        <th>姓名</th>
+                        <td><input type="text" class="contect-input"></td>
+                    </tr>
+                    <tr>
+                        <th>電話</th>
+                        <td><input type="text" class="contect-input"></td>
+                    </tr>
+                    <tr>
+                        <th>地址</th>
+                        <td><input type="text" class="contect-input"></td>
+                    </tr>
+                    <tr>
+                        <th>E-mail</th>
+                        <td><input type="text" class="contect-input"></td>
+                    </tr>
+                </table>
+                <div data-aos="fade-up" style="text-align: center;padding: 20px 10px;">
+                    <input type="checkbox" name="CheckboxGroup1" value="核取方塊" id="ckbPrivacy" class="input_W">已閱讀並同意<a class="" href="ajax/test-ajax-2.html">個人資料暨隱私權保護政策</a>
+                </div>
+                <div class="center" data-aos="fade-up" style="margin-bottom: 30px;">
+                    <a href=""><div class="send-btn">確定上傳</div></a>
+                </div>
+            </div>
+        </div>
+        <img style="width: 100%;margin-top: 30px;" src="./images/bg-bottom.png" alt="">
+        <div style="background-color: #f4e558;margin-top: -10px;padding-bottom: 100px;">
+        </div>
+    </section>
+
+    <!-- gotop STR -->
+    <div id="gotop"><a href="#" class="scrollup">Scroll</a></div>
+    <!-- gotop END -->
+    
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
+    <!--Smooth Page Scroll to Top -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 100) {
+                    $('.scrollup').fadeIn();
+                } else {
+                    $('.scrollup').fadeOut();
+                }
+            });
+
+            $('.scrollup').click(function () {
+                $("html, body").animate({ scrollTop: 0 }, 600);
+                return false;
+            });
+
+        });
+    </script>
+</body>
+
+</html>
