@@ -436,7 +436,7 @@ input[type=checkbox] {
     }
 
     .center img {
-        width: 300px;
+        width: 100%;
         padding: 0px 16px;
     }
 
